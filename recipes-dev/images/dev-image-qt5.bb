@@ -50,7 +50,7 @@ IMAGE_INSTALL_append = " \
 IMAGE_FSTYPES_remove = "multiubi"
 
 add_my_files() {
-	cp -L ${THISDIR}/files/root_home/*  ${IMAGE_ROOTFS}/home/root/
+	cp -L ${THISDIR}/files/root_home/.profile  ${IMAGE_ROOTFS}/home/root/
 }
 
 ROOTFS_POSTPROCESS_COMMAND += "add_my_files;"
